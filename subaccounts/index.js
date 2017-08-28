@@ -6,7 +6,6 @@ const LiquidPledging = liquidpledging.LiquidPledging(true)  // bool for yes test
 const Vault = liquidpledging.Vault;
 
 
-
 async function run() {
   // setting up vault and liquid pledging is as easy as 1, 2, 3
   // 1) instantiate and connect vault to blockchain network
@@ -52,7 +51,7 @@ async function run() {
   const projectOwner1 = '0xe11ba2b4d45eaed5996cd0823791e0c93114882d';
   await liquidPledging.addProject('Project1', projectOwner1, 0, 86400, { from: projectOwner1 });
 
-  // transfer from delegate1 (3rd controller), 4th note, 5eth, 4th controller, extra gas, from owner of note address (i think)
+  // transfer from delegate1 (3rd controller), 3th note, 5eth, 4th controller, extra gas, from owner of note address (i think)
   await liquidPledging.transfer(3, 3, 5, 4, { $extraGas: 200000, $verbose: true }, { from: delegate1 });
 
   // create subproject (like a submilestone)

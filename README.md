@@ -1,6 +1,12 @@
 # liquidpledging-demo
 Small demo of liquidpledging
 
+# requires
+```
+node v8
+testrpc
+```
+
 # install
 ```
 fork https://github.com/ojones/liquidpledging-demo

@@ -10,12 +10,16 @@ npm install
 ```
 
 # usage
-run this in seperate terminal:
-`testrpc --deterministic`
+run testrpc in seperate terminal:
+```
+testrpc --deterministic
+```
 
 use testrpc "Available Addresses" in demo1/index.js
 
-run this in terminal within .../liquidpledging-demo/demo1 folder
-`node index.js`
+run this in terminal within .../liquidpledging-demo/demo1 folder:
+```
+node index.js
+```
 
 output will should display in terminal
